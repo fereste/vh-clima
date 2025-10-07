@@ -1,6 +1,10 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 80;
+
+// Enable CORS for all origins
+app.use(cors());
 
 // Array of Spanish weather conditions
 const weatherConditions = [
